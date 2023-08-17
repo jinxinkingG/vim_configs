@@ -1,21 +1,13 @@
 " config start
-" Plug config
-call plug#begin()
-" coc nvim
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"nerdtree
-Plug 'preservim/nerdtree',
-"airline
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-"gruvbox theme
-Plug 'sainnhe/gruvbox-material'
-Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
+source $VIMRUNTIME/defaults.vim
 
-call plug#end()
 
 " source mappings config
 source $HOME/vimfiles/mappings/mappings.vim
+" source autocmds
+source $HOME/vimfiles/autocmd/autocmd.vim
+" source plugin configs
+source $HOME/vimfiles/init.vim
 
 " colorscheme set
 colorscheme gruvbox-material
@@ -32,5 +24,8 @@ set encoding=utf-8
 "use system clipboard
 set clipboard=unnamed
 
-" for coc configs
-source $HOME/vimfiles/coc_nvim/configs.vim
+" config gvim
+set guioptions-=m  "hide menu bar
+set guioptions-=T  "hide toolbar
+set guioptions-=rlb  "hide scrollbar
+set guioptions=i  "hidden gui menus

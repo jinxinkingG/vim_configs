@@ -12,11 +12,13 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 "gruvbox theme
 Plug 'sainnhe/gruvbox-material'
-Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
+Plug 'liuchengxu/vim-which-key' ",{ 'on': ['WhichKey', 'WhichKey!'] }
 "auto pairs
 Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
 " plugins configs
-source $HOME/vimfiles/configs/*
+source $HOME/vimfiles/configs/coc_nvim.vim
+source $HOME/vimfiles/configs/nerdtree.vim
+source $HOME/vimfiles/configs/whichkey.vim
