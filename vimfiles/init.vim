@@ -15,6 +15,8 @@ Plug 'sainnhe/gruvbox-material'
 Plug 'liuchengxu/vim-which-key' ",{ 'on': ['WhichKey', 'WhichKey!'] }
 "auto pairs
 Plug 'jiangmiao/auto-pairs'
+" vim clap
+Plug 'liuchengxu/vim-clap', { 'do': has('win32') ? 'cargo build --release' : 'make' }
 
 call plug#end()
 
