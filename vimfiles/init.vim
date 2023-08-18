@@ -17,6 +17,7 @@ Plug 'liuchengxu/vim-which-key' ",{ 'on': ['WhichKey', 'WhichKey!'] }
 Plug 'jiangmiao/auto-pairs'
 " vim clap
 Plug 'liuchengxu/vim-clap', { 'do': has('win32') ? 'cargo build --release' : 'make' }
+Plug 'puremourning/vimspector'
 
 call plug#end()
 
@@ -24,3 +25,4 @@ call plug#end()
 source $HOME/vimfiles/configs/coc_nvim.vim
 source $HOME/vimfiles/configs/nerdtree.vim
 source $HOME/vimfiles/configs/whichkey.vim
+source $HOME/vimfiles/configs/vimspector.vim
