@@ -13,6 +13,7 @@ nmap ; :
 nmap <leader>e :NERDTreeFocus<CR>
 nmap ,f :NERDTreeFind<CR>
 nmap ,t :NERDTreeToggle<CR>
+nmap ,c :NERDTreeCWD<CR>
 
 " COC mappings config
 " Use `[g` and `]g` to navigate diagnostics

@@ -17,13 +17,28 @@ let g:which_key_map['u'] = 'Save and Source'
 let g:which_key_map['e'] = 'NerdTree Focus'
 
 let g:which_key_map['f'] = {
-	\ 'name' : '+Finders',
+	\ 'name' : 'Finders',
 	\ 'f' : [':Clap filer', 'Filer'],
 	\ 'w' : [':Clap live_grep', 'Find Words']
 	\ }
 
+let g:which_key_map['t'] = {
+	\ 'name' : 'Set fileType',
+	\ 'j' : [':set ft=json','Json'],	
+	\ 't' : [':set ft=txt','Text'],	
+	\ 'm' : [':set ft=markdown','Mark Down'],	
+	\}
+
+let g:which_key_map['s'] = {
+	\ 'name' : 'Starify',
+	\ 's' : [':SSave','Save a session'],
+	\ 'l' : [':SLoad','load a session'],
+	\ 'd' : [':SDelete','delete a session'],
+	\ 'c' : [':SClose','close a session']
+	\}
+
 let g:which_key_map['w'] = {
-      \ 'name' : '+Windows' ,
+      \ 'name' : 'Windows' ,
       \ 'w' : ['<C-W>w'     , 'other-window']          ,
       \ 'd' : ['<C-W>c'     , 'delete-window']         ,
       \ '-' : ['<C-W>s'     , 'split-window-below']    ,
@@ -44,7 +59,7 @@ let g:which_key_map['w'] = {
       \ }
 
 let g:which_key_map['l'] = {
-	\ 'name' : '+CocList' ,	
+	\ 'name' : 'CocList' ,	
 	\ 'd' : [':CocList diagnostics','CocList diagnostics'],
 	\ 'e' : [':CocList extensions','CocList extensions'],
 	\ 'c' : [':CocList commands','CocList commands'],
@@ -56,7 +71,7 @@ let g:which_key_map['l'] = {
 	\ 'm' : [':CocList marketplace','marketplace'],
 	\ }
 let g:which_key_map['a'] = {
-	\ 'name' : '+CodeActions' ,
+	\ 'name' : 'CodeActions' ,
 	\ 'n' : ['<Plug>(coc-rename)','Rename'],
 	\ 'f' : ['<Plug>(coc-format-selected)','Formatting'],
 	\ 'a' : ['<Plug>(coc-codeaction-selected)','Action(selected)'],
