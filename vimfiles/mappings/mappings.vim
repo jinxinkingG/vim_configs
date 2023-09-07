@@ -14,6 +14,13 @@ nmap <leader>e :NERDTreeFocus<CR>
 nmap ,f :NERDTreeFind<CR>
 nmap ,t :NERDTreeToggle<CR>
 nmap ,c :NERDTreeCWD<CR>
+" quit terminal mode easily
+tnoremap <Esc> <C-\><C-n>
+
+" easy motion
+nmap s <Plug>(easymotion-overwin-f2)
+map  <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
 
 " COC mappings config
 " Use `[g` and `]g` to navigate diagnostics

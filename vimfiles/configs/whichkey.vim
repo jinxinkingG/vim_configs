@@ -11,15 +11,18 @@ set timeoutlen=200
 " only show key map in dictionary
 let g:which_key_ignore_outside_mappings = 1
 
-nmap <silent><nowait><leader>b :Clap buffers<CR>
+nmap <silent><nowait><leader>b :Leaderf! buffer<CR>
+nmap <silent><nowait><leader>o :browse e<CR>
 let g:which_key_map['b'] = 'Buffers'
 let g:which_key_map['u'] = 'Save and Source'
 let g:which_key_map['e'] = 'NerdTree Focus'
+let g:which_key_map['o'] = 'File explorer'
 
 let g:which_key_map['f'] = {
 	\ 'name' : 'Finders',
-	\ 'f' : [':Clap filer', 'Filer'],
-	\ 'w' : [':Clap live_grep', 'Find Words']
+	\ 'f' : [':Leaderf file', 'Find files'],
+	\ 'w' : [':Leaderf rg --recall', 'Find Words'],
+	\ 'r' : [':Leaderf! mru', 'Find Words']
 	\ }
 
 let g:which_key_map['t'] = {
@@ -31,7 +34,7 @@ let g:which_key_map['t'] = {
 
 let g:which_key_map['s'] = {
 	\ 'name' : 'Starify',
-	\ 's' : [':SSave','Save a session'],
+	\ 's' : [':SSave ','Save a session'],
 	\ 'l' : [':SLoad','load a session'],
 	\ 'd' : [':SDelete','delete a session'],
 	\ 'c' : [':SClose','close a session']

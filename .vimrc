@@ -29,3 +29,5 @@ set guioptions-=m  "hide menu bar
 set guioptions-=T  "hide toolbar
 set guioptions-=rlb  "hide scrollbar
 set guioptions=i  "hidden gui menus
+"config colors
+set termguicolors

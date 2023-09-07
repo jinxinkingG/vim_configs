@@ -12,13 +12,17 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 "gruvbox theme
 Plug 'sainnhe/gruvbox-material'
+" everforest theme
+Plug 'sainnhe/everforest'
 Plug 'liuchengxu/vim-which-key' ",{ 'on': ['WhichKey', 'WhichKey!'] }
 "auto pairs
 Plug 'jiangmiao/auto-pairs'
 " vim clap
-Plug 'liuchengxu/vim-clap', { 'do': has('win32') ? 'cargo build --release' : 'make' }
+"Plug 'liuchengxu/vim-clap', { 'do': has('win32') ? 'cargo build --release' : 'make' }
+Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 "Plug 'puremourning/vimspector'
 Plug 'mhinz/vim-startify'
+Plug 'easymotion/vim-easymotion'
 
 call plug#end()
 
@@ -28,3 +32,4 @@ source $HOME/vimfiles/configs/nerdtree.vim
 source $HOME/vimfiles/configs/whichkey.vim
 source $HOME/vimfiles/configs/autopairs.vim
 source $HOME/vimfiles/configs/starify.vim
+source $HOME/vimfiles/configs/leaderf.vim
