@@ -21,8 +21,8 @@ let g:which_key_map['o'] = 'File explorer'
 let g:which_key_map['f'] = {
 	\ 'name' : 'Finders',
 	\ 'f' : [':Leaderf file', 'Find files'],
-	\ 'w' : [':Leaderf rg --recall', 'Find Words'],
-	\ 'r' : [':Leaderf! mru', 'Find Words']
+	\ 'w' : [':Leaderf rg', 'Find Words'],
+	\ 'r' : [':Leaderf! mru', 'Recent Files']
 	\ }
 
 let g:which_key_map['t'] = {

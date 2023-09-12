@@ -8,6 +8,10 @@ vmap q <esc>
 nmap <silent><nowait><leader>q :q<CR>
 nmap <silent><nowait><leader>u :update<CR>:source %<CR>
 nmap ; :
+" buffers action
+nmap <Tab> :bnext<CR>
+nmap <S-Tab> :bprevious<CR>
+nmap <M-w> :bdelete<CR>
 
 " NerdTree mappings
 nmap <leader>e :NERDTreeFocus<CR>
@@ -19,8 +23,8 @@ tnoremap <Esc> <C-\><C-n>
 
 " easy motion
 nmap s <Plug>(easymotion-overwin-f2)
-map  <Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader>w <Plug>(easymotion-overwin-w)
+map  <Leader>g <Plug>(easymotion-bd-w)
+nmap <Leader>g <Plug>(easymotion-overwin-w)
 
 " COC mappings config
 " Use `[g` and `]g` to navigate diagnostics
